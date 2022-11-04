@@ -16,7 +16,7 @@
     "incremental": true
   },
   "files": [
-    "declarations.d.ts", "components/home/needs.tsx", "./pages/Persona.tsx", "./pages/Solutions.tsx", "./pages/Values.tsx", "./pages/NumberBackgroundImage.tsx", "components/home/benefits.tsx", "./pages/Section.tsx", "./pages/Footer.tsx", "./pages/Header.tsx", "./pages/Hero2.tsx", "./pages/Newsletter.tsx", "./pages/Button.tsx", "./pages/DecorationLineProps.tsx"
+    "declarations.d.ts"
   ],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
