@@ -9,7 +9,7 @@ export interface SectionProps {
 
 export function Section({
   children,
-  theme: color = "light",
+  theme = "light",
   size = "normal",
 }: SectionProps) {
   const sectionClasses = clsx(
@@ -23,10 +23,10 @@ export function Section({
 
     // color variation
     {
-      "bg-primary-800 text-white": color === "dark",
-      "bg-white text-primary-800": color === "light",
-      "bg-gray-100 text-primary-800": color === "gray",
-      "bg-accent-300 text-primary-700": color === "accent",
+      "bg-primary-800 text-white": theme === "dark",
+      "bg-white text-primary-800": theme === "light",
+      "bg-gray-100 text-primary-800": theme === "gray",
+      "bg-accent-300 text-primary-700": theme === "accent",
     }
   );
 
@@ -37,7 +37,7 @@ export function Section({
   return (
     <section className={sectionClasses}>
       <div className={containerClasses}>
-        <DecorationLine color={color} />
+        <DecorationLine theme={theme} />
         {children}
       </div>
     </section>

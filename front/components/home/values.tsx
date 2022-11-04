@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Diamond, Flame, ShakeHands, Squares, Target } from "../svg";
 import { NumberBackgroundImage } from "../number-background-image";
-import { DecorationLine } from "../decoration-line";
 import { Section } from "../section";
 import { FeatureCard } from "../feature-card";
 
