@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* @font-face {
+    font-family: "Axiforma";
+    src: url("../public/axiforma/Axiforma-Regular.woff2");
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: "Axiforma";
+    src: url("../public/axiforma/Axiforma-Regular.woff2");
+    font-weight: 200;
+  }
+  
+  @font-face {
+    font-family: "Axiforma";
+    src: url("../public/axiforma/Axiforma-Regular.woff2");
+    font-weight: 400;
+  } */
+  @font-face {
+    font-family: "Axiforma";
+    src: url("../public/axiforma/Axiforma-Light.woff2");
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Axiforma";
+    src: url("../public/axiforma/Axiforma-Regular.woff2");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Axiforma";
+    src: url("../public/axiforma/Axiforma-SemiBold.woff2");
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: "Axiforma";
+    src: url("../public/axiforma/Axiforma-ExtraBold.woff2");
+    font-weight: 700;
+  }
+}
