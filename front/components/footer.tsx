@@ -1,6 +1,6 @@
 import Link, { LinkProps } from "next/link";
-import { Logo } from "../svg";
 import { Section } from "./section";
+import { Logo } from "./svg";
 
 export function Footer() {
   return (

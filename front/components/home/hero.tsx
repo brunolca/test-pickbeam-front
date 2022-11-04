@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Button } from "./button";
-import { Section } from "./section";
+import { Button } from "../button";
+import { Section } from "../section";
 
 export function Hero() {
   return (

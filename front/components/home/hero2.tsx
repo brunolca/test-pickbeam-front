@@ -1,5 +1,5 @@
-import { Section } from "./section";
-import { Button } from "./button";
+import { Button } from "../button";
+import { Section } from "../section";
 
 export function Hero2() {
   return (

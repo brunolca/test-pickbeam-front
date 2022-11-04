@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Diamond, Flame, ShakeHands, Squares, Target } from "../svg";
-import { Section } from "./section";
-import { NumberBackgroundImage } from "./number-background-image";
-import { DecorationLine } from "./decoration-line";
+import { NumberBackgroundImage } from "../number-background-image";
+import { DecorationLine } from "../decoration-line";
+import { Section } from "../section";
 
 export function Values() {
   return (

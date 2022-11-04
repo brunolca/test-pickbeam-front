@@ -1,8 +1,8 @@
 import { Hero } from "../components/home/hero";
 import { Needs } from "../components/home/needs";
 import { Benefits } from "../components/home/benefits";
-import { Footer } from "../components/home/footer";
-import { Header } from "../components/home/header";
+import { Footer } from "../components/footer";
+import { Header } from "../components/header";
 import { Hero2 } from "../components/home/hero2";
 import { Newsletter } from "../components/home/newsletter";
 import { Solutions } from "../components/home/solutions";

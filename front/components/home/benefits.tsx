@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Gauge, Grow, Leaf, LookUp, Server } from "../svg";
-import { DecorationLine } from "./decoration-line";
-import { Section } from "./section";
+import { DecorationLine } from "../decoration-line";
+import { Section } from "../section";
 
 export function Benefits() {
   return (

@@ -1,8 +1,8 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { Cart, Chip, ExternalLink, Globe } from "../svg";
-import { DecorationLine } from "./decoration-line";
-import { Section } from "./section";
+import { DecorationLine } from "../decoration-line";
+import { Section } from "../section";
 
 export function Solutions() {
   return (
@@ -89,9 +89,10 @@ export function SolutionCard({
       </div>
       <Link
         href="/"
-        className="absolute bottom-0 pb-8 font-semibold tracking-[4px] transition duration-300 md:opacity-0 md:group-hover:opacity-100"
+        className="group/link absolute bottom-0 mb-8 font-semibold tracking-[4px] transition duration-300 md:opacity-0 md:group-hover:opacity-100"
       >
-        En savoir plus <ExternalLink className="absolute -right-5 -top-1 w-5" />
+        En savoir plus{" "}
+        <ExternalLink className="absolute -right-5 -top-1 w-5 transition-all duration-200 group-hover/link:-top-2 group-hover/link:-right-6" />
       </Link>
     </li>
   );

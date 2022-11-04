@@ -2,8 +2,8 @@ import { Dialog, Disclosure, Transition } from "@headlessui/react";
 import clsx from "clsx";
 import Link from "next/link";
 import { Fragment, useState } from "react";
-import { useScroll } from "../hooks/use-scroll";
-import { DropChevron, Globe, Hamburger, Logo } from "../svg";
+import { useScroll } from "./hooks/use-scroll";
+import { DropChevron, Globe, Hamburger, Logo } from "./svg";
 import { Button } from "./button";
 
 export const NavSectionsRenderer = () => (
@@ -120,10 +120,10 @@ export function NavDialog({
         className="absolute top-0 isolate z-10 h-screen lg:hidden"
       >
         <Transition.Child
-          enter="transition duration-[200ms] ease-in-out"
+          enter="transition duration-200 ease-in-out"
           enterFrom="transform -translate-x-96"
           enterTo="transform translate-x-0"
-          leave="transition duration-[200ms] ease-in-out"
+          leave="transition duration-200 ease-in-out"
           leaveFrom="transform translate-x-0"
           leaveTo="transform -translate-x-96"
           as={Fragment}

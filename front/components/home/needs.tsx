@@ -1,6 +1,6 @@
 import { Needs1, Needs2, Needs3, Needs4 } from "../svg";
-import { Section } from "./section";
 import Link from "next/link";
+import { Section } from "../section";
 
 export function Needs() {
   return (
