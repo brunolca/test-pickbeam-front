@@ -4,7 +4,7 @@ import { Section } from "../section";
 
 export function Needs() {
   return (
-    <Section color="gray">
+    <Section theme="gray">
       <div className="md: py-4 md:flex">
         <span className="text-lg md:basis-1/3">Votre Besoin</span>
         <h2 className="pt-4 text-[2.4rem] font-bold leading-none md:basis-2/3 md:pt-0">

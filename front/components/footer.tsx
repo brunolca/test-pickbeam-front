@@ -5,7 +5,7 @@ import { Logo } from "./svg";
 export function Footer() {
   return (
     <footer className="bg-primary-800 px-4 py-8 text-white">
-      <Section color="dark">
+      <Section theme="dark">
         <div className="p-4">
           <div className="h-9 w-52">
             <Logo />

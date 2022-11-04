@@ -3,7 +3,7 @@ import { Section } from "../section";
 
 export function Hero2() {
   return (
-    <Section color="dark">
+    <Section theme="dark">
       <div className="pt-4 md:flex md:py-12 md:pr-4">
         <h2 className="text-2xl font-bold md:pr-4">
           La Jamstack au service du produit

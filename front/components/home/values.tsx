@@ -3,10 +3,11 @@ import { Diamond, Flame, ShakeHands, Squares, Target } from "../svg";
 import { NumberBackgroundImage } from "../number-background-image";
 import { DecorationLine } from "../decoration-line";
 import { Section } from "../section";
+import { FeatureCard } from "../feature-card";
 
 export function Values() {
   return (
-    <Section color="accent">
+    <Section theme="accent">
       <div className="pt-4 text-primary-800 md:w-2/3">
         <h2 className="pt-4 text-[2.4rem] font-bold md:pt-0">Nos valeurs</h2>
         <div className="h-4"></div>
@@ -18,7 +19,8 @@ export function Values() {
       </div>
       <div className="pt-[68px] md:flex">
         <ul className="grid gap-8 md:mr-8 md:basis-2/3 lg:grid-cols-2">
-          <ValueCard
+          <FeatureCard
+            theme="accent"
             BackgroundImageComponent={() => (
               <NumberBackgroundImage number={1} />
             )}
@@ -26,7 +28,8 @@ export function Values() {
             title="Confiance"
             description="Nous croyons que la communication basée sur l’écoute, la sincérité et la simplicité est essentielle pour accompagner nos partenaires à dépasser leurs objectifs de croissance. La confiance est pour nous la base de travail essentielle pour une collaboration réussie. De l’implication et du résultat tout simplement."
           />
-          <ValueCard
+          <FeatureCard
+            theme="accent"
             BackgroundImageComponent={() => (
               <NumberBackgroundImage number={2} />
             )}
@@ -34,7 +37,8 @@ export function Values() {
             title="Passion"
             description="Nous sommes avant tout des passionnés par le monde du web. Le digital est une quête sans fin qui appelle toujours plus au dépassement de soi. Chaque difficulté est un challenge qui permet de nous nourrir intellectuellement. On progresse tous ensemble et le partage fait parti de notre ADN pour ce tirer vers le haut tous ensemble."
           />
-          <ValueCard
+          <FeatureCard
+            theme="accent"
             BackgroundImageComponent={() => (
               <NumberBackgroundImage number={3} />
             )}
@@ -42,7 +46,8 @@ export function Values() {
             title="Ambition"
             description="Cela implique de prendre des initiatives, d’être créatif, saisir des opportunités, de se faire confiance et aussi d’être mis en confiance. Cela nécessite de se sentir responsable de l’entreprise et aussi de nos clients. Pour s’exprimer ainsi, cet esprit nécessite une organisation décentralisée avec un niveau juste d’autorité et une responsabilisation poussée."
           />
-          <ValueCard
+          <FeatureCard
+            theme="accent"
             BackgroundImageComponent={() => (
               <NumberBackgroundImage number={4} />
             )}
@@ -66,35 +71,5 @@ export function Values() {
         </div>
       </div>
     </Section>
-  );
-}
-
-export interface ValueCardProps {
-  ImageComponent?: React.FC<{ className?: string }>;
-  BackgroundImageComponent?: React.FC<{ className?: string }>;
-  title: string;
-  description: string;
-}
-
-export function ValueCard({
-  BackgroundImageComponent,
-  ImageComponent,
-  description,
-  title,
-}: ValueCardProps) {
-  return (
-    <li className="relative isolate">
-      <DecorationLine color="black" />
-      <div className="flex justify-between py-4">
-        <h3 className="text-[28px] leading-none">{title}</h3>
-        {ImageComponent && (
-          <ImageComponent className="flex h-9 w-9 content-center justify-around" />
-        )}
-      </div>
-      <p className="text-sm">{description}</p>
-      <div className="absolute top-2 -z-10 inline-block h-[200px] w-[200px]">
-        {BackgroundImageComponent && <BackgroundImageComponent />}
-      </div>
-    </li>
   );
 }

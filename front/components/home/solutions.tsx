@@ -6,7 +6,7 @@ import { Section } from "../section";
 
 export function Solutions() {
   return (
-    <Section color="light">
+    <Section theme="light">
       <div className="pt-4 md:flex">
         <span className="text-lg md:basis-1/3">Nos solutions</span>
         <div className="md:basis-2/3">

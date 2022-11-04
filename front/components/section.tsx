@@ -2,14 +2,14 @@ import clsx from "clsx";
 import { DecorationLine } from "./decoration-line";
 
 export interface SectionProps {
-  color?: "dark" | "light" | "gray" | "accent";
+  theme?: "dark" | "light" | "gray" | "accent";
   size?: "large" | "normal";
   children: React.ReactNode;
 }
 
 export function Section({
   children,
-  color = "light",
+  theme: color = "light",
   size = "normal",
 }: SectionProps) {
   const sectionClasses = clsx(
@@ -37,7 +37,7 @@ export function Section({
   return (
     <section className={sectionClasses}>
       <div className={containerClasses}>
-        <DecorationLine color={color === "dark" ? "white" : "black"} />
+        <DecorationLine color={color} />
         {children}
       </div>
     </section>

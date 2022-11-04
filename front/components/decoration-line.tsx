@@ -1,17 +1,16 @@
 import clsx from "clsx";
 
 export interface DecorationLineProps {
-  color?: "black" | "white";
+  theme?: "dark" | "light" | "gray" | "accent";
 }
 
-export function DecorationLine({ color = "white" }: DecorationLineProps) {
+export function DecorationLine({ theme = "light" }: DecorationLineProps) {
   return (
     <div
-      className={clsx(
-        ["h-2 w-full border-t border-l bg-transparent"],
-        { "border-white": color === "white" },
-        { "border-primary-800": color === "black" }
-      )}
+      className={clsx("h-2 w-full border-t border-l bg-transparent", {
+        "border-white": theme === "dark",
+        "border-primary-800": theme !== "dark",
+      })}
     ></div>
   );
 }

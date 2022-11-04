@@ -4,7 +4,7 @@ import { Section } from "../section";
 
 export function Hero() {
   return (
-    <Section color="dark" size="large">
+    <Section theme="dark" size="large">
       <div className="relative isolate">
         <p className="letter pt-16 pb-4 text-sm tracking-[5.22px] text-primary-100 lg:pt-[100px]">
           AGENCE JAMSTACK À TOULOUSE
