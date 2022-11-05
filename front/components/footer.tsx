@@ -1,11 +1,11 @@
 import Link, { LinkProps } from "next/link";
-import { Section } from "./section";
+import { SectionContainer } from "./section/section-container";
 import { Logo } from "./svg";
 
 export function Footer() {
   return (
     <footer className="bg-primary-800 px-4 py-8 text-white">
-      <Section theme="dark">
+      <SectionContainer theme="dark">
         <div className="p-4">
           <div className="h-9 w-52">
             <Logo />
@@ -50,7 +50,7 @@ export function Footer() {
             ]}
           />
         </div>
-      </Section>
+      </SectionContainer>
     </footer>
   );
 }

@@ -176,7 +176,7 @@ export function NavBar({ SectionsRenderer }: NavBarProps) {
 export function ContactButton() {
   return (
     <div className="flex justify-around p-4">
-      <Button cta="Nous contacter" />
+      <Button cta="Nous contacter" theme="dark" />
     </div>
   );
 }

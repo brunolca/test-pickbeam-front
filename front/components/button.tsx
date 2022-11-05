@@ -1,14 +1,22 @@
+import clsx from "clsx";
 import Link from "next/link";
 
 export interface ButtonProps {
   cta: string;
+  theme: "dark" | "light" | "gray" | "accent";
 }
 
-export function Button({ cta }: ButtonProps) {
+export function Button({ cta, theme }: ButtonProps) {
   return (
     <Link
       href={""}
-      className="relative inline-block	 h-12 whitespace-nowrap rounded-full bg-accent-200 py-4 px-8 text-base font-bold leading-none text-primary-800"
+      className={clsx(
+        "relative inline-block h-12 whitespace-nowrap rounded-full py-4 px-8 text-base font-bold leading-none",
+        { "bg-accent-200 text-primary-800": theme === "dark" },
+        { "bg-accent-300 text-primary-800": theme === "light" },
+        { "bg-accent-300 text-primary-800": theme === "gray" },
+        { "bg-primary-400 text-white": theme === "accent" }
+      )}
     >
       {cta}
     </Link>

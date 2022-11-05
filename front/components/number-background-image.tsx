@@ -4,7 +4,7 @@ export interface NumberBackgroundImageProps {
 
 export function NumberBackgroundImage({ number }: NumberBackgroundImageProps) {
   return (
-    <svg width="100%" height="100%" viewBox="0 0 200 210">
+    <svg width="100%" height="100%" viewBox="0 0 200 210" fill="currentColor">
       <linearGradient
         id="gr-white-to-transparent"
         x1="0"
@@ -12,8 +12,8 @@ export function NumberBackgroundImage({ number }: NumberBackgroundImageProps) {
         x2="100%"
         y2="0"
       >
-        <stop stopColor="white" stopOpacity={1} offset="10%" />
-        <stop stopColor="white" stopOpacity={0} offset="90%" />
+        <stop stopColor="currentColor" stopOpacity={1} offset="10%" />
+        <stop stopColor="currentColor" stopOpacity={0} offset="90%" />
       </linearGradient>
       <text
         x="0"
