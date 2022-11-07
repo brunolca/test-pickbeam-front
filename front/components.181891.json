@@ -45,12 +45,13 @@
       "name": "button",
       "display_name": null,
       "created_at": "2022-11-04T15:07:58.507Z",
-      "updated_at": "2022-11-07T09:24:29.097Z",
+      "updated_at": "2022-11-07T12:17:35.594Z",
       "id": 3082291,
       "schema": {
         "cta": {
           "type": "text",
-          "required": true
+          "required": true,
+          "default_value": "Click me"
         },
         "href": {
           "type": "text",
@@ -117,7 +118,7 @@
       "name": "featureCard",
       "display_name": null,
       "created_at": "2022-11-05T21:10:43.070Z",
-      "updated_at": "2022-11-07T10:43:45.054Z",
+      "updated_at": "2022-11-07T12:22:20.697Z",
       "id": 3083851,
       "schema": {
         "title": {
@@ -139,7 +140,7 @@
         }
       },
       "image": null,
-      "preview_field": null,
+      "preview_field": "title",
       "is_root": false,
       "preview_tmpl": null,
       "is_nestable": true,
@@ -217,16 +218,16 @@
       "name": "page",
       "display_name": null,
       "created_at": "2022-11-04T15:05:54.106Z",
-      "updated_at": "2022-11-07T09:47:27.753Z",
+      "updated_at": "2022-11-07T12:44:37.509Z",
       "id": 3082284,
       "schema": {
         "body": {
           "type": "bloks",
-          "restrict_type": "",
+          "restrict_type": "groups",
           "restrict_components": true,
-          "component_whitelist": [
-            "sectionGrid",
-            "sectionHero"
+          "component_whitelist": [],
+          "component_group_whitelist": [
+            "95f385c0-ca92-40ad-b143-7b048394fd84"
           ]
         }
       },
@@ -246,7 +247,7 @@
       "name": "sectionGrid",
       "display_name": null,
       "created_at": "2022-11-04T15:05:54.168Z",
-      "updated_at": "2022-11-07T11:59:23.693Z",
+      "updated_at": "2022-11-07T12:44:47.535Z",
       "id": 3082287,
       "schema": {
         "theme": {
@@ -329,14 +330,12 @@
           "type": "bloks",
           "required": true,
           "pos": 5,
-          "restrict_type": "",
+          "restrict_type": "groups",
           "restrict_components": true,
-          "component_whitelist": [
-            "featureCard",
-            "blueCard",
-            "iconCard"
-          ],
-          "component_group_whitelist": []
+          "component_whitelist": [],
+          "component_group_whitelist": [
+            "242570c9-2f94-4395-a459-c6e2d1ab97ad"
+          ]
         },
         "illustration": {
           "type": "bloks",
@@ -364,7 +363,7 @@
       "name": "sectionHero",
       "display_name": null,
       "created_at": "2022-11-07T09:25:42.931Z",
-      "updated_at": "2022-11-07T09:47:27.677Z",
+      "updated_at": "2022-11-07T12:16:16.462Z",
       "id": 3085973,
       "schema": {
         "theme": {
@@ -395,7 +394,8 @@
             }
           ],
           "required": true,
-          "exclude_empty_option": true
+          "exclude_empty_option": true,
+          "default_value": "1"
         },
         "title": {
           "type": "text",
@@ -427,6 +427,26 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "sectionHero",
+      "component_group_uuid": "95f385c0-ca92-40ad-b143-7b048394fd84",
+      "color": null,
+      "icon": null,
+      "component_group_name": "sections"
+    },
+    {
+      "name": "sectionNewsletter",
+      "display_name": null,
+      "created_at": "2022-11-07T12:43:54.022Z",
+      "updated_at": "2022-11-07T12:43:54.022Z",
+      "id": 3086965,
+      "schema": {},
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "sectionNewsletter",
       "component_group_uuid": "95f385c0-ca92-40ad-b143-7b048394fd84",
       "color": null,
       "icon": null,

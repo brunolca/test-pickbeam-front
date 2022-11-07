@@ -90,7 +90,7 @@ export interface IconCardStoryblok {
 }
 
 export interface PageStoryblok {
-  body?: (SectionGridStoryblok | SectionHeroStoryblok)[];
+  body?: (SectionGridStoryblok | SectionHeroStoryblok | SectionNewsletterStoryblok)[];
   _uid: string;
   component: "page";
   uuid?: string;
@@ -103,7 +103,7 @@ export interface SectionGridStoryblok {
   title: string;
   subtitle?: string;
   description?: string;
-  children: (FeatureCardStoryblok | BlueCardStoryblok | IconCardStoryblok)[];
+  children: (BlueCardStoryblok | FeatureCardStoryblok | IconCardStoryblok)[];
   illustration?: DecoratedImageStoryblok[];
   _uid: string;
   component: "sectionGrid";
@@ -119,5 +119,11 @@ export interface SectionHeroStoryblok {
   button?: ButtonStoryblok[];
   _uid: string;
   component: "sectionHero";
+  [k: string]: any;
+}
+
+export interface SectionNewsletterStoryblok {
+  _uid: string;
+  component: "sectionNewsletter";
   [k: string]: any;
 }
