@@ -10,7 +10,6 @@ export function FeatureCardBlok({
   theme,
   i,
 }: ThemedStoryblok<FeatureCardStoryblok>) {
-  console.log({ blokf: blok });
   return (
     <FeatureCard
       {...storyblokEditable(blok)}

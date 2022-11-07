@@ -12,7 +12,5 @@ export function resolveIcon(iconName?: string): React.FC {
     throw new Error(`Cannot find icon for name ${iconName}`)
    }
 
-   console.log(Icon)
-
    return Icon
 }
