@@ -9,14 +9,13 @@ export function PageStory({ blok }: { blok: PageStoryblok }) {
     <>
       <Head>
         <title>{blok.title || "Pickbeam"}</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
 
       <main {...storyblokEditable(blok)} key={blok._uid}>
-        {blok.body?.map((nestedBlok) => (
-          <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
+        {blok.body?.map((nestedBlok, i) => (
+          <StoryblokComponent blok={nestedBlok} i={i} key={nestedBlok._uid} />
         ))}
       </main>
 

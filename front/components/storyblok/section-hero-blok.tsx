@@ -4,9 +4,10 @@ import { resolveSectionHeroLayout } from "../section";
 
 interface SectionHeroBlokProps {
   blok: SectionHeroStoryblok;
+  i: number;
 }
 
-export function SectionHeroBlok({ blok }: SectionHeroBlokProps) {
+export function SectionHeroBlok({ blok, i }: SectionHeroBlokProps) {
   const Hero = resolveSectionHeroLayout(blok.layout);
   const [button] = blok.button || [];
 
@@ -15,7 +16,7 @@ export function SectionHeroBlok({ blok }: SectionHeroBlokProps) {
       {...storyblokEditable(blok)}
       key={blok._uid}
       theme={blok.theme as any}
-      size="normal"
+      size={i === 0 ? "large" : "normal"}
       title={blok.title || ""}
       subtitle={blok.subtitle || ""}
       description={blok.description || ""}

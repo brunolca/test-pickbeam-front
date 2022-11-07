@@ -20,7 +20,6 @@ export function IconCard({
     <Link
       {...props}
       href={href}
-      as="li"
       className="relative flex flex-col items-center overflow-hidden p-4 after:absolute after:inset-0 after:block after:transition-colors after:duration-200 after:hover:bg-black/10"
     >
       <div className="relative mb-4 h-[150px] w-[150px] pb-4">

@@ -34,7 +34,33 @@ export const NavSectionsRenderer = () => (
         Image={Globe}
       />
     </NavSection>
-    <NavSection title="Services">
+    <NavSection title="Votre Besoin">
+      <NavItem
+        title="Site Jamstack"
+        description="De la landing page à un site corporate complexe"
+        href="/"
+        Image={Globe}
+      />
+      <NavItem
+        title="Site Jamstack"
+        description="De la landing page à un site corporate complexe"
+        href="/"
+        Image={Globe}
+      />
+      <NavItem
+        title="Site Jamstack"
+        description="De la landing page à un site corporate complexe"
+        href="/"
+        Image={Globe}
+      />
+      <NavItem
+        title="Site Jamstack"
+        description="De la landing page à un site corporate complexe"
+        href="/"
+        Image={Globe}
+      />
+    </NavSection>
+    <NavSection title="RESSOURCES">
       <NavItem
         title="Site Jamstack"
         description="De la landing page à un site corporate complexe"
@@ -67,19 +93,21 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const { scrollDirection, isTopPage } = useScroll();
 
-  const headerClasses = clsx(
-    "fixed z-10 flex h-16 w-full flex-col justify-end bg-primary-800 text-white lg:h-24",
-    "transition-all duration-300",
-    { "top-0": scrollDirection === "up" },
-    { "-top-16": scrollDirection === "down" },
-    { "lg:top-0": isTopPage },
-    { "lg:-top-8": !isTopPage }
-  );
-
   return (
-    <header className={headerClasses}>
+    <header
+      className={clsx(
+        "fixed z-10 flex h-16 w-full flex-col justify-end bg-primary-800 text-white lg:h-24",
+        "transition-all duration-300",
+        { "top-0": scrollDirection === "up" },
+        { "-top-16": scrollDirection === "down" },
+        { "lg:top-0": isTopPage },
+        { "lg:-top-8": !isTopPage }
+      )}
+    >
       <div className="mx-auto flex h-16 w-full max-w-[1278px] items-center justify-between">
-        <Logo className="ml-4 h-10 w-52" />
+        <Link href="/">
+          <Logo className="ml-4 h-10 w-52" />
+        </Link>
         <NavDialog
           isOpen={isOpen}
           setIsOpen={setIsOpen}
