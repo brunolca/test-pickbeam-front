@@ -145,7 +145,7 @@ export function NavDialog({
         as="nav"
         static
         onClose={setIsOpen}
-        className="absolute top-0 isolate z-10 h-screen lg:hidden"
+        className="fixed top-0 isolate z-10 min-h-full lg:hidden"
       >
         <Transition.Child
           enter="transition duration-200 ease-in-out"
@@ -157,7 +157,7 @@ export function NavDialog({
           as={Fragment}
         >
           <div className="fixed left-0 top-0 bottom-0 z-10 flex items-center justify-center">
-            <Dialog.Panel className="h-full w-[300px] max-w-[300px] bg-primary-800 text-white">
+            <Dialog.Panel className="h-full w-[300px] max-w-[300px] overflow-y-auto bg-primary-800 text-white">
               <Logo className="mx-auto w-52 py-6" />
               <SectionsRenderer />
               <ContactButton />
