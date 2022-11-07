@@ -90,6 +90,7 @@ export interface IconCardStoryblok {
 }
 
 export interface PageStoryblok {
+  title?: string;
   body?: (SectionGridStoryblok | SectionHeroStoryblok | SectionNewsletterStoryblok)[];
   _uid: string;
   component: "page";

@@ -8,7 +8,7 @@ export function PageStory({ blok }: { blok: PageStoryblok }) {
   return (
     <>
       <Head>
-        <title>Pickbeam</title>
+        <title>{blok.title || "Pickbeam"}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
