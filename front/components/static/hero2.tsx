@@ -8,9 +8,9 @@ export function Hero2() {
       title="La Jamstack au service du produit"
       description="La Jamstack n’est pas une technologie ou un produit. C’est une façon de penser qui fait avancer le Web, le rendant sécurisé, plus rapide et plus facile à faire évoluer."
       Button={({ theme }) => (
-        <Button cta="Qu'est-ce que la Jamstack ?" theme={theme} />
+        <Button cta="Qu'est-ce que la Jamstack ?" href="/" theme={theme} />
       )}
-      theme="accent"
+      theme="dark"
       size="normal"
     />
   );

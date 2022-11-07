@@ -6,24 +6,27 @@ const SolutionsComponents: SectionGridProps["GridComponents"] = [
   ({ theme, i }) => (
     <BlueCard
       i={i}
-      ImageComponent={Globe}
+      Icon={Globe}
       title="Site vitrine Jamstack"
+      href="/"
       description="Votre site est le reflet de votre identité et de vos valeurs. Exploitez-les pour garder vos utilisateurs et en gagner de nouveaux grâce à une expérience utilisateur rapide, fluide et un SEO optimisé."
     />
   ),
   ({ theme, i }) => (
     <BlueCard
       i={i}
-      ImageComponent={Cart}
+      Icon={Cart}
       title="Headless E-commerce"
+      href="/"
       description="Toutes les millisecondes comptent dans le parcours de vente. Aucun compromis doit être fait sur la sécurité, la performance, l’UX ainsi que sur l’identité que vous souhaitez donner à votre e-shop."
     />
   ),
   ({ theme, i }) => (
     <BlueCard
       i={i}
-      ImageComponent={Chip}
+      Icon={Chip}
       title="Progressive Web App"
+      href="/"
       description="Offrez le meilleur des applications natives et de la technologie Web à portée de main de vos utilisateurs. Une PWA vous aidera à accélérer encore plus votre engagement client."
     />
   ),

@@ -1,4 +1,4 @@
-import { Squares } from "../svg";
+import { Squares } from "./svg";
 
 export function Newsletter() {
   return (

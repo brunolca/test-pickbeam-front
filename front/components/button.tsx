@@ -3,10 +3,11 @@ import Link from "next/link";
 
 export interface ButtonProps {
   cta: string;
+  href: string;
   theme: "dark" | "light" | "gray" | "accent";
 }
 
-export function Button({ cta, theme }: ButtonProps) {
+export function Button({ cta, href, theme }: ButtonProps) {
   return (
     <Link
       href={""}

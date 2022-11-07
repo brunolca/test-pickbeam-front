@@ -6,7 +6,7 @@ export { default as Needs4 } from "./needs_4.svg";
 export { default as Diamond } from "./diamond.svg";
 export { default as Flame } from "./flame.svg";
 export { default as Target } from "./target.svg";
-export { default as ShakeHands } from "./shake_hands.svg";
+export { default as Handshake } from "./handshake.svg";
 export { default as Cart } from "./cart.svg";
 export { default as Chip } from "./chip.svg";
 export { default as Globe } from "./globe.svg";

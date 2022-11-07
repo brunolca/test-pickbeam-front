@@ -7,7 +7,9 @@ export function Hero() {
       title="L'excellence du web au service de votre croissance"
       subtitle="AGENCE JAMSTACK À TOULOUSE"
       description="Entourez-vous d’une équipe performante à votre écoute pour vous accompagner du design au développement de votre solution digitale."
-      Button={({ theme }) => <Button cta="Passer à l'action" theme={theme} />}
+      Button={({ theme }) => (
+        <Button cta="Passer à l'action" href="/" theme={theme} />
+      )}
       theme="dark"
       size="large"
     />

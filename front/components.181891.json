@@ -1,0 +1,436 @@
+{
+  "components": [
+    {
+      "name": "blueCard",
+      "display_name": null,
+      "created_at": "2022-11-05T21:18:11.549Z",
+      "updated_at": "2022-11-07T10:17:30.813Z",
+      "id": 3083853,
+      "schema": {
+        "title": {
+          "type": "text"
+        },
+        "description": {
+          "type": "textarea"
+        },
+        "href": {
+          "type": "multilink",
+          "restrict_content_types": true,
+          "component_whitelist": [
+            "page"
+          ]
+        },
+        "icon": {
+          "type": "option",
+          "use_uuid": true,
+          "source": "internal",
+          "datasource_slug": "svg-icon-list",
+          "required": true
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "blueCard",
+      "component_group_uuid": "242570c9-2f94-4395-a459-c6e2d1ab97ad",
+      "color": null,
+      "icon": null,
+      "component_group_name": "cards"
+    },
+    {
+      "name": "button",
+      "display_name": null,
+      "created_at": "2022-11-04T15:07:58.507Z",
+      "updated_at": "2022-11-07T09:24:29.097Z",
+      "id": 3082291,
+      "schema": {
+        "cta": {
+          "type": "text",
+          "required": true
+        },
+        "href": {
+          "type": "text",
+          "required": true
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "button",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "decoratedImage",
+      "display_name": null,
+      "created_at": "2022-11-06T14:33:41.366Z",
+      "updated_at": "2022-11-07T09:08:18.061Z",
+      "id": 3084693,
+      "schema": {
+        "image": {
+          "type": "asset"
+        },
+        "decoration": {
+          "type": "option",
+          "use_uuid": true,
+          "options": [
+            {
+              "_uid": "da538a06-150e-4319-878f-e5d6433254b6",
+              "name": "",
+              "value": ""
+            },
+            {
+              "_uid": "40e02320-0cf9-463e-a940-d16387056ece",
+              "value": "1",
+              "name": "1"
+            },
+            {
+              "_uid": "35372899-a6d5-4419-a34c-1daf14b83fc8",
+              "value": "2",
+              "name": "2"
+            }
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "decoratedImage",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "featureCard",
+      "display_name": null,
+      "created_at": "2022-11-05T21:10:43.070Z",
+      "updated_at": "2022-11-07T10:43:45.054Z",
+      "id": 3083851,
+      "schema": {
+        "title": {
+          "type": "text",
+          "required": false
+        },
+        "description": {
+          "type": "textarea"
+        },
+        "icon": {
+          "type": "option",
+          "use_uuid": true,
+          "source": "internal",
+          "datasource_slug": "svg-icon-list"
+        },
+        "withBackgroundNumber": {
+          "type": "boolean",
+          "required": false
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "featureCard",
+      "component_group_uuid": "242570c9-2f94-4395-a459-c6e2d1ab97ad",
+      "color": null,
+      "icon": null,
+      "component_group_name": "cards"
+    },
+    {
+      "name": "icon",
+      "display_name": null,
+      "created_at": "2022-11-06T14:35:27.007Z",
+      "updated_at": "2022-11-06T14:49:22.177Z",
+      "id": 3084694,
+      "schema": {
+        "svg": {
+          "type": "asset"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "icon",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "iconCard",
+      "display_name": null,
+      "created_at": "2022-11-05T21:12:09.796Z",
+      "updated_at": "2022-11-07T12:02:22.741Z",
+      "id": 3083852,
+      "schema": {
+        "firstLine": {
+          "type": "text"
+        },
+        "secondLine": {
+          "type": "text"
+        },
+        "href": {
+          "type": "multilink",
+          "email_link_type": false,
+          "show_anchor": false
+        },
+        "icon": {
+          "type": "asset",
+          "filetypes": [
+            "images"
+          ],
+          "required": true
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "iconCard",
+      "component_group_uuid": "242570c9-2f94-4395-a459-c6e2d1ab97ad",
+      "color": null,
+      "icon": null,
+      "component_group_name": "cards"
+    },
+    {
+      "name": "page",
+      "display_name": null,
+      "created_at": "2022-11-04T15:05:54.106Z",
+      "updated_at": "2022-11-07T09:47:27.753Z",
+      "id": 3082284,
+      "schema": {
+        "body": {
+          "type": "bloks",
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "sectionGrid",
+            "sectionHero"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "page",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "sectionGrid",
+      "display_name": null,
+      "created_at": "2022-11-04T15:05:54.168Z",
+      "updated_at": "2022-11-07T11:59:23.693Z",
+      "id": 3082287,
+      "schema": {
+        "theme": {
+          "type": "option",
+          "use_uuid": true,
+          "filter_content_type": [],
+          "options": [
+            {
+              "_uid": "89c2d527-b52c-4f6d-a8e5-7f32f71b8a3d",
+              "name": "Light",
+              "value": "light"
+            },
+            {
+              "_uid": "473a6657-8bad-4ac7-a2ba-d0011575dde8",
+              "value": "gray",
+              "name": "Gray"
+            },
+            {
+              "_uid": "dd44b9ba-482c-487e-8972-ec271ad0b2c3",
+              "value": "dark",
+              "name": "Dark"
+            },
+            {
+              "_uid": "428f2baa-cb98-4240-b830-4a2ab6246a30",
+              "value": "accent",
+              "name": "Accent"
+            }
+          ],
+          "default_value": "light",
+          "required": true,
+          "pos": 0,
+          "exclude_empty_option": true,
+          "source": "internal",
+          "datasource_slug": "theme"
+        },
+        "layout": {
+          "type": "option",
+          "use_uuid": true,
+          "options": [
+            {
+              "_uid": "c3778d51-283f-49d9-bc94-ba567cd4c505",
+              "name": "Right Image",
+              "value": "rightImage"
+            },
+            {
+              "_uid": "8bfd7a97-2608-4bc4-a2fd-f379db178a1a",
+              "value": "leftImage",
+              "name": "Left Image"
+            },
+            {
+              "_uid": "7d1161f8-b80f-4951-9d1e-9ec04d9efaa5",
+              "value": "fullWidthThreeColumns",
+              "name": "Full Width 3 Columns"
+            },
+            {
+              "_uid": "0a6b1b40-fb31-473a-8037-c6a7f1f99fc6",
+              "value": "fullWidthFourColumns",
+              "name": "Full Width 4 Columns"
+            }
+          ],
+          "required": true,
+          "pos": 1,
+          "exclude_empty_option": true,
+          "default_value": "rightImage"
+        },
+        "title": {
+          "type": "text",
+          "required": true,
+          "pos": 2
+        },
+        "subtitle": {
+          "type": "text",
+          "pos": 3
+        },
+        "description": {
+          "type": "textarea",
+          "pos": 4
+        },
+        "children": {
+          "type": "bloks",
+          "required": true,
+          "pos": 5,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "featureCard",
+            "blueCard",
+            "iconCard"
+          ],
+          "component_group_whitelist": []
+        },
+        "illustration": {
+          "type": "bloks",
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "decoratedImage"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "sectionGrid",
+      "component_group_uuid": "95f385c0-ca92-40ad-b143-7b048394fd84",
+      "color": "",
+      "icon": "",
+      "component_group_name": "sections"
+    },
+    {
+      "name": "sectionHero",
+      "display_name": null,
+      "created_at": "2022-11-07T09:25:42.931Z",
+      "updated_at": "2022-11-07T09:47:27.677Z",
+      "id": 3085973,
+      "schema": {
+        "theme": {
+          "type": "option",
+          "use_uuid": true,
+          "pos": 0,
+          "options": [],
+          "source": "internal",
+          "datasource_slug": "theme",
+          "required": true,
+          "exclude_empty_option": true,
+          "default_value": "dark"
+        },
+        "layout": {
+          "type": "option",
+          "use_uuid": true,
+          "pos": 1,
+          "options": [
+            {
+              "_uid": "cc0d6b34-c21f-4cbf-a69c-884dd6c203bf",
+              "name": "1",
+              "value": "1"
+            },
+            {
+              "_uid": "695b4eaa-587b-4371-a683-323ad3c9e03f",
+              "value": "2",
+              "name": "2"
+            }
+          ],
+          "required": true,
+          "exclude_empty_option": true
+        },
+        "title": {
+          "type": "text",
+          "pos": 2
+        },
+        "subtitle": {
+          "type": "text",
+          "pos": 3
+        },
+        "description": {
+          "type": "textarea",
+          "pos": 4
+        },
+        "button": {
+          "type": "bloks",
+          "maximum": 1,
+          "restrict_type": "",
+          "restrict_components": true,
+          "component_whitelist": [
+            "button"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "sectionHero",
+      "component_group_uuid": "95f385c0-ca92-40ad-b143-7b048394fd84",
+      "color": null,
+      "icon": null,
+      "component_group_name": "sections"
+    }
+  ]
+}

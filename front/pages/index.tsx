@@ -1,25 +1,32 @@
-import { Hero } from "../components/home/hero";
-import { Needs } from "../components/home/needs";
-import { Benefits } from "../components/home/benefits";
-import { Footer } from "../components/footer";
-import { Header } from "../components/header";
-import { Hero2 } from "../components/home/hero2";
-import { Newsletter } from "../components/home/newsletter";
-import { Solutions } from "../components/home/solutions";
-import { Values } from "../components/home/values";
+import {
+  getStoryblokApi,
+  StoryblokComponent,
+  useStoryblokState,
+} from "@storyblok/react";
 
-export default function Home() {
-  return (
-    <>
-      <Header />
-      <Hero />
-      <Needs />
-      <Solutions />
-      <Hero2 />
-      <Benefits />
-      <Values />
-      <Newsletter />
-      <Footer />
-    </>
-  );
+export default function Home({ story }: any) {
+  story = useStoryblokState(story);
+
+  return <StoryblokComponent blok={story.content} />;
+}
+
+export async function getStaticProps() {
+  // home is the default slug for the homepage in Storyblok
+  let slug = "home";
+
+  // load the draft version
+  let sbParams = {
+    version: "draft", // or 'published'
+  };
+
+  const storyblokApi = getStoryblokApi();
+  let { data } = await storyblokApi.get(`cdn/stories/${slug}`, sbParams);
+
+  return {
+    props: {
+      story: data ? data.story : false,
+      key: data ? data.story.id : false,
+    },
+    revalidate: 3600, // revalidate every hour
+  };
 }
