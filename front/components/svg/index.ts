@@ -19,3 +19,4 @@ export { default as Hamburger } from "./hamburger.svg";
 export { default as Logo } from "./logo.svg";
 export { default as DropChevron } from "./drop_chevron.svg";
 export { default as ExternalLink } from "./external_link.svg";
+export { default as Lock } from "./lock.svg";
