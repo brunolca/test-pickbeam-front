@@ -9,9 +9,10 @@ export function SectionGridRightImage({
   subtitle,
   theme,
   title,
+  ...props
 }: SectionGridProps) {
   return (
-    <SectionContainer theme={theme}>
+    <SectionContainer theme={theme} {...props}>
       <div
         className={clsx(
           "pt-4 md:w-2/3",

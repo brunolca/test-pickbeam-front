@@ -14,7 +14,7 @@ export function PageStory({ blok }: { blok: PageStoryblok }) {
 
       <Header />
 
-      <main {...storyblokEditable(blok)}>
+      <main {...storyblokEditable(blok)} key={blok._uid}>
         {blok.body?.map((nestedBlok) => (
           <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
         ))}

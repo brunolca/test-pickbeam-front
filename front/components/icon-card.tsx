@@ -14,9 +14,11 @@ export function IconCard({
   href,
   secondLine,
   theme,
+  ...props
 }: IconCardProps) {
   return (
     <Link
+      {...props}
       href={href}
       as="li"
       className="relative flex flex-col items-center overflow-hidden p-4 after:absolute after:inset-0 after:block after:transition-colors after:duration-200 after:hover:bg-black/10"

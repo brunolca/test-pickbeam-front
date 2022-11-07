@@ -10,9 +10,10 @@ export function SectionHero1({
   Button,
   theme,
   size,
+  ...props
 }: SectionHeroProps) {
   return (
-    <SectionContainer theme={theme} size={size}>
+    <SectionContainer theme={theme} size={size} {...props}>
       <div className="relative isolate">
         <p
           className={clsx(

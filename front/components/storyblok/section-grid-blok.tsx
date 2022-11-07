@@ -13,6 +13,7 @@ export function SectionGridBlok({ blok }: SectionGridBlokProps) {
   return (
     <SectionGrid
       {...storyblokEditable(blok)}
+      key={blok._uid}
       title={blok.title}
       subtitle={blok.subtitle}
       description={blok.description}

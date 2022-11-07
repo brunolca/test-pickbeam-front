@@ -7,7 +7,7 @@ export interface ButtonProps {
   theme: "dark" | "light" | "gray" | "accent";
 }
 
-export function Button({ cta, href, theme }: ButtonProps) {
+export function Button({ cta, href, theme, ...props }: ButtonProps) {
   return (
     <Link
       href={""}
@@ -18,6 +18,7 @@ export function Button({ cta, href, theme }: ButtonProps) {
         { "bg-accent-300 text-primary-800": theme === "gray" },
         { "bg-primary-400 text-white": theme === "accent" }
       )}
+      {...props}
     >
       {cta}
     </Link>

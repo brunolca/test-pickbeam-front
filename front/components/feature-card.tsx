@@ -15,9 +15,10 @@ export function FeatureCard({
   description,
   title,
   theme,
+  ...props
 }: FeatureCardProps) {
   return (
-    <li className="relative isolate">
+    <li className="relative isolate" {...props}>
       <DecorationLine color={theme === "dark" ? "light" : "dark"} />
       <div className="flex items-end justify-between py-4">
         <h3 className="text-[28px] leading-none">{title}</h3>

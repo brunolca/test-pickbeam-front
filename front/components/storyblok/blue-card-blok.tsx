@@ -12,6 +12,7 @@ export function BlueCardBlok({
   return (
     <BlueCard
       {...storyblokEditable(blok)}
+      key={blok._uid}
       Icon={resolveIcon(blok.icon)}
       title={blok.title || ""}
       description={blok.description || ""}

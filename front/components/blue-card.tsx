@@ -11,13 +11,21 @@ export interface BlueCardProps {
   href: string;
 }
 
-export function BlueCard({ i, description, Icon, title, href }: BlueCardProps) {
+export function BlueCard({
+  i,
+  description,
+  Icon,
+  title,
+  href,
+  ...props
+}: BlueCardProps) {
   return (
     <li
       className={clsx(
         "group relative m-4 h-[380px] overflow-y-hidden p-8 text-white",
         backgroundVarient(i)
       )}
+      {...props}
     >
       <DecorationLine color="light" />
       <div className="pt-4">

@@ -17,6 +17,7 @@ export function DecoratedImageBlok({
   return (
     <Decoration
       {...storyblokEditable(blok)}
+      key={blok._uid}
       theme={theme}
       Image={() => (
         <Image

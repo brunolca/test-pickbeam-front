@@ -1,8 +1,8 @@
 import { Squares } from "./svg";
 
-export function Newsletter() {
+export function Newsletter({ ...props }) {
   return (
-    <section className="bg-primary-800 px-4 py-8 text-primary-800">
+    <section className="bg-primary-800 px-4 py-8 text-primary-800" {...props}>
       <div className="m-auto mb-[68px] max-w-7xl">
         <div className="relative bg-primary-100 pt-[66px] pl-8 pr-[72px] pb-[100px] md:py-[200px] md:pr-16 md:pl-[15%]">
           <h2 className="text-[28px] font-bold">Notre newsletter</h2>

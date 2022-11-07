@@ -13,6 +13,7 @@ export function SectionHeroBlok({ blok }: SectionHeroBlokProps) {
   return (
     <Hero
       {...storyblokEditable(blok)}
+      key={blok._uid}
       theme={blok.theme as any}
       size="normal"
       title={blok.title || ""}

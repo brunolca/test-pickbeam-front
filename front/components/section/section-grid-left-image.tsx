@@ -9,9 +9,10 @@ export function SectionGridLeftImage({
   subtitle,
   theme,
   title,
+  ...props
 }: SectionGridProps) {
   return (
-    <SectionContainer theme={theme}>
+    <SectionContainer theme={theme} {...props}>
       <div
         className={clsx(
           "py-4 md:flex",

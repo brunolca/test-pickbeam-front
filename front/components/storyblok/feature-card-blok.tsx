@@ -13,6 +13,7 @@ export function FeatureCardBlok({
   return (
     <FeatureCard
       {...storyblokEditable(blok)}
+      key={blok._uid}
       title={blok.title || ""}
       description={blok.description || ""}
       theme={theme}

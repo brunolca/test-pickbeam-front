@@ -9,9 +9,10 @@ export function SectionHero2({
   Button,
   theme,
   size,
+  ...props
 }: SectionHeroProps) {
   return (
-    <SectionContainer theme={theme} size={size}>
+    <SectionContainer theme={theme} size={size} {...props}>
       <div className="pt-4 md:flex md:py-12 md:pr-4">
         <h2 className="text-2xl font-bold md:pr-4">{title} </h2>
         <div>

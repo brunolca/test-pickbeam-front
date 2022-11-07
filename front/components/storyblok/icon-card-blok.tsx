@@ -12,6 +12,7 @@ export function IconCardBlok({
   return (
     <IconCard
       {...storyblokEditable(blok)}
+      key={blok._uid}
       Icon={
         blok.icon?.filename
           ? () => (

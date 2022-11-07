@@ -7,7 +7,7 @@ import {
 export default function Home({ story }: any) {
   story = useStoryblokState(story);
 
-  return <StoryblokComponent blok={story.content} />;
+  return <StoryblokComponent blok={story.content} key={story.content._uid} />;
 }
 
 export async function getStaticProps() {

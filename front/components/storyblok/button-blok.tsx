@@ -7,6 +7,7 @@ export function ButtonBlok({ blok, theme }: ThemedStoryblok<ButtonStoryblok>) {
   return (
     <Button
       {...storyblokEditable(blok)}
+      key={blok._uid}
       theme={theme}
       cta={blok.cta}
       href={blok.href}
