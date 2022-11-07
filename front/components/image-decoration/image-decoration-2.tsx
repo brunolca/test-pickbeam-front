@@ -2,9 +2,13 @@ import clsx from "clsx";
 import { Squares } from "../svg";
 import { ImageDecorationProps } from "./image-decoration";
 
-export function ImageDecoration2({ theme, Image }: ImageDecorationProps) {
+export function ImageDecoration2({
+  theme,
+  Image,
+  ...props
+}: ImageDecorationProps) {
   return (
-    <div className="relative h-full w-full">
+    <div className="relative h-full w-full" {...props}>
       <Image />
       <Squares
         className={clsx(
@@ -29,7 +33,7 @@ export function ImageDecoration2({ theme, Image }: ImageDecorationProps) {
           "absolute bottom-0 left-0 h-[75px] w-[180px]",
           { "bg-primary-800": theme === "dark" },
           { "bg-white": theme === "light" },
-          { "bg-gray-100": theme === "gray" },
+          { "bg-gray-300": theme === "gray" },
           { "bg-accent-300": theme === "accent" }
         )}
       ></div>
@@ -38,7 +42,7 @@ export function ImageDecoration2({ theme, Image }: ImageDecorationProps) {
           "absolute bottom-0 left-0 h-[180px] w-[65px]",
           { "bg-primary-800": theme === "dark" },
           { "bg-white": theme === "light" },
-          { "bg-gray-100": theme === "gray" },
+          { "bg-gray-300": theme === "gray" },
           { "bg-accent-300": theme === "accent" }
         )}
       ></div>

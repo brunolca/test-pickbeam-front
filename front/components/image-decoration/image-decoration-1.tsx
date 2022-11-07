@@ -1,16 +1,20 @@
 import clsx from "clsx";
 import { ImageDecorationProps } from "./image-decoration";
 
-export function ImageDecoration1({ theme, Image }: ImageDecorationProps) {
+export function ImageDecoration1({
+  theme,
+  Image,
+  ...props
+}: ImageDecorationProps) {
   return (
-    <div className="relative h-full w-full">
+    <div className="relative h-full w-full" {...props}>
       <Image />
       <div
         className={clsx(
           "absolute top-0 right-0 h-[180px] w-[75px]",
           { "bg-primary-800": theme === "dark" },
           { "bg-white": theme === "light" },
-          { "bg-gray-100": theme === "gray" },
+          { "bg-gray-300": theme === "gray" },
           { "bg-accent-300": theme === "accent" }
         )}
       ></div>
@@ -19,7 +23,7 @@ export function ImageDecoration1({ theme, Image }: ImageDecorationProps) {
           "absolute bottom-0 right-0 h-[65px] w-[130px]",
           { "bg-primary-800": theme === "dark" },
           { "bg-white": theme === "light" },
-          { "bg-gray-100": theme === "gray" },
+          { "bg-gray-300": theme === "gray" },
           { "bg-accent-300": theme === "accent" }
         )}
       ></div>

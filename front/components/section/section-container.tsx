@@ -26,7 +26,7 @@ export function SectionContainer({
         {
           "bg-primary-800 text-white": theme === "dark",
           "bg-white text-primary-800": theme === "light",
-          "bg-gray-100 text-primary-800": theme === "gray",
+          "bg-gray-300 text-primary-800": theme === "gray",
           "bg-accent-300 text-primary-700": theme === "accent",
         }
       )}
