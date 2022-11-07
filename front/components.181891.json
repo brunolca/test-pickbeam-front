@@ -4,7 +4,7 @@
       "name": "blueCard",
       "display_name": null,
       "created_at": "2022-11-05T21:18:11.549Z",
-      "updated_at": "2022-11-07T10:17:30.813Z",
+      "updated_at": "2022-11-07T13:14:40.645Z",
       "id": 3083853,
       "schema": {
         "title": {
@@ -29,7 +29,7 @@
         }
       },
       "image": null,
-      "preview_field": null,
+      "preview_field": "title",
       "is_root": false,
       "preview_tmpl": null,
       "is_nestable": true,
@@ -74,7 +74,7 @@
       "name": "decoratedImage",
       "display_name": null,
       "created_at": "2022-11-06T14:33:41.366Z",
-      "updated_at": "2022-11-07T09:08:18.061Z",
+      "updated_at": "2022-11-07T13:28:34.933Z",
       "id": 3084693,
       "schema": {
         "image": {
@@ -92,18 +92,18 @@
             {
               "_uid": "40e02320-0cf9-463e-a940-d16387056ece",
               "value": "1",
-              "name": "1"
+              "name": "Variation 1"
             },
             {
               "_uid": "35372899-a6d5-4419-a34c-1daf14b83fc8",
               "value": "2",
-              "name": "2"
+              "name": "Variation 2"
             }
           ]
         }
       },
       "image": null,
-      "preview_field": null,
+      "preview_field": "image",
       "is_root": false,
       "preview_tmpl": null,
       "is_nestable": true,
@@ -252,7 +252,7 @@
       "name": "sectionGrid",
       "display_name": null,
       "created_at": "2022-11-04T15:05:54.168Z",
-      "updated_at": "2022-11-07T12:44:47.535Z",
+      "updated_at": "2022-11-07T13:07:37.025Z",
       "id": 3082287,
       "schema": {
         "theme": {
@@ -352,7 +352,7 @@
         }
       },
       "image": null,
-      "preview_field": null,
+      "preview_field": "title",
       "is_root": false,
       "preview_tmpl": null,
       "is_nestable": true,
@@ -368,7 +368,7 @@
       "name": "sectionHero",
       "display_name": null,
       "created_at": "2022-11-07T09:25:42.931Z",
-      "updated_at": "2022-11-07T12:16:16.462Z",
+      "updated_at": "2022-11-07T13:07:26.304Z",
       "id": 3085973,
       "schema": {
         "theme": {
@@ -425,7 +425,7 @@
         }
       },
       "image": null,
-      "preview_field": null,
+      "preview_field": "title",
       "is_root": false,
       "preview_tmpl": null,
       "is_nestable": true,
