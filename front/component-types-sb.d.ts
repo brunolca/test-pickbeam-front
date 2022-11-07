@@ -32,9 +32,10 @@ export interface BlueCardStoryblok {
   [k: string]: any;
 }
 
+
 export interface ButtonStoryblok {
   cta: string;
-  href: string;
+  href?: MultilinkStoryblok;
   _uid: string;
   component: "button";
   [k: string]: any;

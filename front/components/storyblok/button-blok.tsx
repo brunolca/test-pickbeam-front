@@ -10,7 +10,7 @@ export function ButtonBlok({ blok, theme }: ThemedStoryblok<ButtonStoryblok>) {
       key={blok._uid}
       theme={theme}
       cta={blok.cta}
-      href={blok.href}
+      href={blok.href?.url}
     />
   );
 }
