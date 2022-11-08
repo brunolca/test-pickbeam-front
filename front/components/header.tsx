@@ -60,7 +60,7 @@ export const NavSectionsRenderer = () => (
         Image={Globe}
       />
     </NavSection>
-    <NavSection title="RESSOURCES">
+    <NavSection title="Ressources">
       <NavItem
         title="Site Jamstack"
         description="De la landing page à un site corporate complexe"
@@ -105,7 +105,7 @@ export function Header() {
       )}
     >
       <div className="mx-auto flex h-16 w-full max-w-[1278px] items-center justify-between">
-        <Link href="/">
+        <Link href="/" aria-label="accueil">
           <Logo className="ml-4 h-10 w-52" />
         </Link>
         <NavDialog
@@ -118,6 +118,7 @@ export function Header() {
         <button
           onClick={() => setIsOpen(true)}
           className="mr-4 h-12 w-12 rounded-[4px] transition hover:bg-primary-400 lg:hidden"
+          aria-label="menu"
         >
           <div className="m-auto h-10 w-10">
             <Hamburger />

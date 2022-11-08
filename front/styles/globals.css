@@ -23,21 +23,25 @@
     font-family: "Axiforma";
     src: url("../public/axiforma/Axiforma-Light.woff2");
     font-weight: 300;
+    font-display: swap;
   }
   @font-face {
     font-family: "Axiforma";
     src: url("../public/axiforma/Axiforma-Regular.woff2");
     font-weight: 500;
+    font-display: swap;
   }
   @font-face {
     font-family: "Axiforma";
     src: url("../public/axiforma/Axiforma-SemiBold.woff2");
     font-weight: 600;
+    font-display: swap;
   }
   @font-face {
     font-family: "Axiforma";
     src: url("../public/axiforma/Axiforma-ExtraBold.woff2");
     font-weight: 700;
+    font-display: swap;
   }
 }
 
